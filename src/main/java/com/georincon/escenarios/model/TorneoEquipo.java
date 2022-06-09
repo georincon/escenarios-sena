@@ -19,24 +19,24 @@ public class TorneoEquipo {
 
     @ManyToOne
     @JoinColumn(name = "torneo_id")
-    private Torneo torneo;
+    private Torneo torneoId;
 
     @ManyToOne
     @JoinColumn(name = "equipo_id")
-    private Equipo equipo;
+    private Equipo equipoId;
 
-    public TorneoEquipo(Torneo torneo, Equipo equipo) {
+    public TorneoEquipo(Torneo torneoId, Equipo equipoId) {
         super();
-        this.torneo = torneo;
-        this.equipo = equipo;
+        this.torneoId = torneoId;
+        this.equipoId = equipoId;
     }
 
     @Override
     public String toString() {
         return "TorneoEquipo{" +
                 "id=" + id +
-                ", torneo=" + torneo +
-                ", equipo=" + equipo +
+                ", torneoId=" + torneoId +
+                ", equipoId=" + equipoId +
                 '}';
     }
 

@@ -1,7 +1,6 @@
 package com.georincon.escenarios.controller;
 
 import com.georincon.escenarios.model.Municipio;
-import com.georincon.escenarios.model.Patrocinador;
 import com.georincon.escenarios.model.Torneo;
 import com.georincon.escenarios.repository.MunicipioRepository;
 import com.georincon.escenarios.repository.TorneoRepository;

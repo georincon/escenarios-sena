@@ -19,10 +19,10 @@ public class Patrocinador {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(length = 20, nullable = false, unique =  true)
+    @Column(length = 20, nullable = false) //, unique =  true
     private String identificacion;
 
-    @Column(length = 50, nullable = false, unique =  true)
+    @Column(length = 50, nullable = false) //, unique =  true
     private String nombre;
 
     @Column(length = 150, nullable = false)
@@ -58,7 +58,7 @@ public class Patrocinador {
         this.telefono = telefono;
         this.tipo_persona = tipo_persona;
         this.correo = correo;
-        this.equipos = equipos;
+       // this.equipos = equipos;
     }
 
     @Override
@@ -71,7 +71,7 @@ public class Patrocinador {
                 ", telefono='" + telefono + '\'' +
                 ", tipo_persona='" + tipo_persona + '\'' +
                 ", correo='" + correo + '\'' +
-                ", equipos=" + equipos +
+            //    ", equipos=" + equipos +
                 '}';
     }
 

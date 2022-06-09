@@ -19,7 +19,7 @@ public class Municipio {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(length = 50, nullable = false, unique =  true)
+    @Column(length = 50, nullable = false) //, unique =  true
     private String nombre;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
@@ -47,7 +47,7 @@ public class Municipio {
         return "Municipio{" +
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
-                 ", torneos=" + torneos +
+                //", torneos=" + torneos +
                 '}';
     }
 

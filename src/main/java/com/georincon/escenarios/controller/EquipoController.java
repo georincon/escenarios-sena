@@ -1,13 +1,9 @@
 package com.georincon.escenarios.controller;
 
 import com.georincon.escenarios.model.Equipo;
-import com.georincon.escenarios.model.Municipio;
 import com.georincon.escenarios.model.Patrocinador;
-import com.georincon.escenarios.model.Torneo;
 import com.georincon.escenarios.repository.EquipoRepository;
-import com.georincon.escenarios.repository.MunicipioRepository;
 import com.georincon.escenarios.repository.PatrocinadorRepository;
-import com.georincon.escenarios.repository.TorneoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
